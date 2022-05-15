@@ -6,7 +6,7 @@ namespace Palindrome
     {
         static void Main()
         {
-            Console.WriteLine("Insert a string to check if it's a palindrome!\n");
+            Console.WriteLine("Insert a string to check if it's a palindrome:\n");
             
             string? str = Console.ReadLine();
             Console.WriteLine("\n");
@@ -14,7 +14,7 @@ namespace Palindrome
             if (string.IsNullOrWhiteSpace(str))
             {
                 Console.WriteLine("String cannot be empty or contain only whitespaces.");
-                Console.ReadKey();
+                Environment.Exit(-1);
             }
             else
             {
