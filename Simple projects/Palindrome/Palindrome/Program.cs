@@ -40,7 +40,7 @@ namespace Palindrome
             int i = 0;
             int j = s.Length - 1;
 
-            while (i != s.Length - 1 && j != 0)
+            while (i < j)
             {
                 if (s[i] != s[j])
                 {
